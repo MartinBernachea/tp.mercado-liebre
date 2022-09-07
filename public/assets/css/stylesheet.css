@@ -19,31 +19,36 @@ main {
 
 .header-section {
     display: flex;
+    height: 10%;
 }
 
 /* LOGO */
 
 .img-logo {
-    width: 200px;
-    height: 100px;
+    width: 20%;
+    max-width: 200px;
+    height: 100%;
     margin: 20px 5%;
 }
 
 /* SEARCHBAR */
 
 .container {
-    width: 60%;    
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .searchbar {
-    background-color: rgba(102, 102, 102, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 10px 20px;
     border-radius: 10px;
     width: 90%;
     margin: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .input-searchbar {
@@ -61,7 +66,7 @@ main {
     border-radius: 10px;
     width: 30px;
     height: 30px;
-    cursor: pointer;
+    cursor: pointer;;
 }
 
 .input-searchbar::placeholder {
@@ -78,9 +83,9 @@ main {
 
 .title {
     text-align: center;
-    /* padding: 10px 0px 10px 0px; */
     margin: auto auto;
     color: #000;
+    min-width: 340px;
 }
 
 .fa-hand-holding-usd {
@@ -126,6 +131,7 @@ a:hover {
     margin: 20px 0px 0px 0px;
     background-image: url(/assets/img/img-home-banner.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 
@@ -164,6 +170,7 @@ a:hover {
 .section-ofertas {
     display: inline-block;
     width: 350px;
+    height: 400px;
     background-color: #ebebeb;
     margin: 15px;
     box-shadow: 0px 0px 29px 1px rgba(0, 0, 0, 0.8);
@@ -174,19 +181,19 @@ a:hover {
 .section-ofertas:hover {
     transform: scale(1.05);
     transition: all 300ms ease-out;
-    border: 1px solid black;
     cursor: pointer;
 }
 
 .section-ofertas-items {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 10px;
 }
 
 .img-productos {
     height: 300px;
     width: 300px;
+    display: flex;
+    
 }
 
 .img-ofertas-div {
@@ -198,6 +205,14 @@ a:hover {
 
 .info-producto {
     padding: 0px 15px 15px 15px;
+    position: relative;
+    bottom: 40px;
+}
+
+.section-div-icon {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
 }
 
 .info-envio {
@@ -208,6 +223,8 @@ a:hover {
     background-color: #FFF;
     border-radius: 50%;
     padding: 5px;
+    /* position: relative;
+    bottom: 40px; */
 }
 
 .info-venta {
@@ -259,4 +276,83 @@ a:hover {
 
 .footer-copyright {
     display: flex;
+}
+
+@media (max-width: 1300px) {
+
+    /* HEADER */
+    
+    .header-section {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px
+    }
+
+    .container {
+        width: 70%;    
+    }
+
+    .img-logo {
+        width: 20%;
+    }
+
+    /* BANNER */
+
+    .header-banner {
+        height: 300px;
+    }
+
+    /* MAIN */
+
+    .section-ofertas-items {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 940px) {
+
+    /* HEADER NAV */
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar-nav {
+        margin: 5px;
+    }
+
+    .navbar-nav-icons {
+        margin: 5px;
+    }
+
+    /* FOOTER NAV */
+    .footer-nav {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        display: none;
+    }
+
+    .nav-icon {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .container {
+        width: 55%;    
+    }
+
+    .img-logo {
+        width: 35%;
+    }
+
+    .header-banner {
+        height: 150px;
+    }
 }

@@ -224,8 +224,6 @@ a:hover {
     background-color: #FFF;
     border-radius: 50%;
     padding: 5px;
-    /* position: relative;
-    bottom: 40px; */
 }
 
 .info-venta {
@@ -242,7 +240,7 @@ a:hover {
     display: inline-block;
     color: green;
     font-size: 16px;
-    width: 60%;
+    width: 50%;
 }
 
 .info-descripcion {

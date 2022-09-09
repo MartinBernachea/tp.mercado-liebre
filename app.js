@@ -15,6 +15,10 @@ app.get('/', function (req, res) {
     res.sendFile(__dirname + '/views/index.html');
 });
 
+app.get('/login', function (req, res) {
+    res.sendFile(__dirname + '/views/pages/form-login.html');
+});
+
 app.listen(process.env.PORT || 3000, function() {
     console.log("Servidor corriendo");
 });

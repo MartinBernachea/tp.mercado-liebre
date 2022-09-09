@@ -1,0 +1,136 @@
+/* FORM LOGIN CSS  */
+
+.form-login-h1 {
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+    color: #000;
+  }
+  
+  .form {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto 60px auto;
+  }
+  
+  .form h1 {
+    margin-bottom: 10px;
+  }
+  
+  .form-box {
+    height: 100%;
+    width: 80%;
+    max-width: 800px;
+    border: 0;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .background-log-form {
+    background-color: #fff;
+  }
+
+  .form-container {
+    height: 100%;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+  
+  .fields {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .label {
+    display: none;
+  }
+  
+  .input-text {
+    width: 100%;
+    padding: 4px 12px;
+    margin-bottom: 20px;
+    background: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: solid 2px #000;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .config-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+  .config-field label {
+    margin: 0 20px 0 0;
+  }
+
+  .login-button-div {
+    margin: 20px 0;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .iniciar-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .iniciar-con-item {
+    margin: 0px 20px 0px 20px;
+  }
+  
+  .redir-cc {
+    margin-top: 30px;
+  }
+  
+.redir-cc a {
+    font-size: 1.2rem;
+    color: #3483fa;
+}
+
+.redir-cc a:hover {
+    color: #2968c8;
+}
+
+  .redir-crear-cuenta {
+    font-weight: bold;
+  }
+  
+.btn-secondary {
+    color: #fff;
+    font-size: 18px;
+    padding-left: 15px;
+    background-color: #3483fa;
+    border: 0;
+    border-radius: 10px;
+  }
+  
+  .btn-block {
+    display: block;
+    width: 80%;
+    height: 100%;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #2968c8;
+    transition: 0.3s;
+    cursor: pointer;
+  }

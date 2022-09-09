@@ -1,3 +1,6 @@
+@import url(./index.css);
+@import url(./form-login.css);
+
 * {
     font-family: 'Roboto Mono', monospace;
     padding: 0px;
@@ -24,11 +27,16 @@ main {
 
 /* LOGO */
 
-.img-logo {
+.img-logo-a {
     width: 20%;
     max-width: 200px;
     height: 100%;
     margin: 20px 5%;
+}
+
+.img-logo {
+    width: 100%;
+    height: 100%;
 }
 
 /* SEARCHBAR */
@@ -83,8 +91,9 @@ main {
 /* TITLE */
 
 .title {
-    text-align: center;
-    margin: auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #000;
     min-width: 340px;
 }
@@ -123,19 +132,6 @@ a:hover {
     color: #000;
 }
 
-
-/* BANNER */
-
-.header-banner {
-    width: 100%;
-    height: 400px;
-    margin: 20px 0px 0px 0px;
-    background-image: url(/assets/img/img-home-banner.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-
 /* ICON */
 
 .nav-icon {
@@ -153,98 +149,6 @@ a:hover {
     background-color: blue;
     border-radius: 5px;
     font-size: 20px;
-}
-
-/* SECTION PRODUCTOS */
-
-.section-productos-ofertas,
-.section-productos-ultima-visita {
-    background-color: #ebebeb;
-    display: flexbox;
-}
-
-.h2-section-ofertas {
-    font-size: 24px;
-    padding: 20px 0px 20px 20px;
-}
-
-.section-ofertas {
-    display: inline-block;
-    width: 350px;
-    height: 400px;
-    background-color: #ebebeb;
-    margin: 15px;
-    box-shadow: 0px 0px 29px 1px rgba(0, 0, 0, 0.8);
-    -webkit-box-shadow: 0px 0px 29px 1px rgba(0, 0, 0, 0.8);
-    -moz-box-shadow: 0px 0px 29px 1px rgba(0, 0, 0, 0.8);
-}
-
-.section-ofertas:hover {
-    transform: scale(1.05);
-    transition: all 300ms ease-out;
-    cursor: pointer;
-}
-
-.section-ofertas-items {
-    display: flex;
-    justify-content: space-around;
-}
-
-.img-productos {
-    height: 300px;
-    width: 300px;
-    display: flex;
-    
-}
-
-.img-ofertas-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 350px;
-}
-
-.info-producto {
-    padding: 0px 15px 15px 15px;
-    position: relative;
-    bottom: 40px;
-}
-
-.section-div-icon {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 20px;
-}
-
-.info-envio {
-    width: 30px;
-    height: 30px;
-    font-size: 16px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    padding: 5px;
-}
-
-.info-venta {
-    width: 100%;
-}
-
-.info-precio {
-    font-size: 18px;
-    display: inline;
-    width: 30%;
-}
-
-.info-descuento {
-    display: inline-block;
-    color: green;
-    font-size: 16px;
-    width: 50%;
-}
-
-.info-descripcion {
-    font-size: 16px;
 }
 
 /* FOOTER */
@@ -277,6 +181,9 @@ a:hover {
     display: flex;
 }
 
+
+/* RESPONSIVE */
+
 @media (max-width: 1300px) {
 
     /* HEADER */
@@ -291,8 +198,12 @@ a:hover {
         width: 70%;    
     }
 
-    .img-logo {
+    .img-logo-a {
         width: 20%;
+    }
+
+    .title {
+        width: 100%;
     }
 
     /* BANNER */
@@ -307,6 +218,11 @@ a:hover {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+    }
+
+    /* LOGIN  */
+    .form {
+        height: 450px;
     }
 }
 
@@ -330,6 +246,10 @@ a:hover {
         flex-wrap: wrap;
     }
 
+    /* LOGIN  */
+    .form {
+        height: 500px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -347,11 +267,20 @@ a:hover {
         width: 55%;    
     }
 
-    .img-logo {
+    .img-logo-a {
         width: 35%;
+    }
+
+    .title {
+        font-size: .9rem;
     }
 
     .header-banner {
         height: 150px;
+    }
+
+    /* LOGIN  */
+    .form {
+        height: 550px;
     }
 }

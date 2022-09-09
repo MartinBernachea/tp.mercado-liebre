@@ -1,5 +1,6 @@
 @import url(./index.css);
 @import url(./form-login.css);
+@import url(./form-register.css);
 
 * {
     font-family: 'Roboto Mono', monospace;
@@ -187,7 +188,7 @@ a:hover {
 @media (max-width: 1300px) {
 
     /* HEADER */
-    
+
     .header-section {
         display: flex;
         flex-wrap: wrap;
@@ -195,7 +196,7 @@ a:hover {
     }
 
     .container {
-        width: 70%;    
+        width: 70%;
     }
 
     .img-logo-a {
@@ -224,6 +225,8 @@ a:hover {
     .form {
         height: 450px;
     }
+
+
 }
 
 @media (max-width: 940px) {
@@ -250,6 +253,7 @@ a:hover {
     .form {
         height: 500px;
     }
+
 }
 
 @media (max-width: 600px) {
@@ -264,7 +268,7 @@ a:hover {
     }
 
     .container {
-        width: 55%;    
+        width: 55%;
     }
 
     .img-logo-a {

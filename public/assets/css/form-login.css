@@ -55,7 +55,7 @@
   .input-text {
     width: 100%;
     padding: 4px 12px;
-    margin-bottom: 20px;
+    margin: 15px 0;
     background: transparent;
     border-top: 0;
     border-left: 0;
@@ -124,7 +124,9 @@
   }
   
   .btn-block {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
     height: 100%;
   }

@@ -20,7 +20,8 @@
         <nav>
             <section class="header-section">
                 <!-- LOGO -->
-                <a href="/" class="img-logo-a"> <img src="/assets/img/logo-mercado-liebre.svg" alt="logo-mercado-liebre" class="img-logo"> </a>
+                <a href="/" class="img-logo-a"> <img src="/assets/img/logo-mercado-liebre.svg" alt="logo-mercado-liebre"
+                        class="img-logo"> </a>
 
                 <!-- SEARCHBAR -->
                 <div class="container">
@@ -64,7 +65,7 @@
                     </li>
                 </ul>
             </div>
-            
+
             <!-- ICON -->
             <div class="nav-icon">
                 <i class="fa-solid fa-bars inside-icon"></i>
@@ -75,45 +76,102 @@
 
     <!-- MAIN -->
     <main>
-        <!-- FORM -->
-        <section class="form">
-            <form action="" class="form-box background-log-form">
-                
-            <h1 class="form-login-h1">INICIA SESION EN TU CUENTA</h1>
 
-                <div class="form-container">
+        <section class="form-register">
+            <form class="form-box">
+                <fieldset class="form-fieldset">
+
+                    <h1 class="form-register-h1">REGISTRATE</h1>
+
+                    <!-- NOMBRE COMPLETO -->
+                    <label for="nombre" class="label"> </label>
+                    <input name="nombre" class="input-text-register" type="text" tabindex="1" placeholder="Nombre completo"
+                        required />
+
                     <!-- USUARIO -->
-                    <div class="fields">
-                        <label for="nombre" class="label"></label>
-                        <input type="text" name="nombre" class="input-text" tabindex="1"
-                            placeholder="Introduce tu correo o nombre de usuario" required />
+                    <label for="nombre" class="label"> </label>
+                    <input name="nombre" class="input-text-register" type="text" tabindex="1" placeholder="Usuario" required />
 
-                        <label for="contrseña" class="label"></label>
-                        <input type="password" name="contrseña" class="input-text" tabindex="1"
-                            placeholder="Introduce tu contrseña" required />
-                    </div>
-                    <div class="config-field">
-                        <label>
-                            <input type="checkbox" class="checkbox-box" />
-                            Mostrar contrseña
-                        </label>
-                        <a href=""> Se te olvido la contraseña? </a>
-                    </div>
-                    <div class="login-button-div">
-                        <button class="btn-secondary btn-block">INICIAR SESION</button>
+                    <!-- EMAIL -->
+                    <label for="email" class="label"></label>
+                    <input name="email" class="input-text-register" type="email" tabindex="2" placeholder="Email" required />
+
+                    <!-- FECHA DE NACIMIENTO  -->
+                    <label for="date" class="label"></label>
+                    <input type="date" name="date" class="input-text-register" required="">
+
+                    <!-- DOMICILIO -->
+                    <label for="domicilio" class="label"></label>
+                    <input type="text" name="domicilio" placeholder="Domicilio" class="input-text-register" required="">
+
+                    <!-- TIPO CUENTA -->
+                    <div class="form-perfil">
+
+                        <h3 class="form-perfil-h3"> Perfil del Usuario </h3>
+
+                        <div class="radio">
+                            <input type="radio" name="categoria" id="comprador">
+                            <label for="comprador"> Comprador </label>
+
+                            <input type="radio" name="categoria" id="vendedor">
+                            <label for="vendedor"> Vendedor </label>
+                        </div>
                     </div>
 
+                    <!-- INTERESES  -->
+
+                    <h3 class="form-perfil-h3"> Intereses</h3>
+
+                    <div class="form-intereses">
+
+                        <input type="checkbox" name="hobbies" id="Electro">
+                        <label for="Electro">Electro</label>
+
+                        <input type="checkbox" name="hobbies" id="Moda">
+                        <label for="Moda">Moda</label>
+
+                        <input type="checkbox" name="hobbies" id="Hogar">
+                        <label for="Hogar">Hogar</label>
+
+                        <input type="checkbox" name="hobbies" id="Jugeteria">
+                        <label for="Jugeteria">Jugetería</label>
+
+                        <input type="checkbox" name="hobbies" id="Vida-sana">
+                        <label for="Vida-sana">Vida sana</label>
+                    </div>
+
+                    <!-- FOTO DE PERFIL  -->
+                    <h3 class="form-perfil-h3"> Foto de Perfil </h3>
+                    <input type="file" name="avatar" accept=".jpg" multiple="" class="input-foto">
+
+                    <!-- PASSWORD -->
+                    <label for="nombre" class="label"> </label>
+                    <input name="nombre" class="input-text-register" type="password" tabindex="1" placeholder="Contraseña"
+                        required />
+
+                    <label for="nombre" class="label"> </label>
+                    <input name="confirmar-contraseña" class="input-text-register" type="password" tabindex="1"
+                        placeholder="Confirmar contraseña" required />
+
+                    <!-- INICIAR CON -->
                     <div class="iniciar-con">
                         <a href="" class="iniciar-con-item"> Inciar con Google </a>
                         <a href="" class="iniciar-con-item"> Iniciar con Facebook </a>
                     </div>
-                    <div class="redir-cc">
-                        <a href="/register" class="redir-crear-cuenta">
-                            Crear nueva cuenta
-                        </a>
+
+                    <div class="register-button-div">
+                        <button type="submit" class="btn-secondary btn-block">Registrarse</button>
                     </div>
-                </div>
+
+                    <div class="redir-cc">
+                        <p>
+                            Ya tenes cuenta?
+                            <a href="/login" class="redir-crear-cuenta"> INICIA SESION </a>
+                        </p>
+                    </div>
+                </fieldset>
             </form>
+            </div>
         </section>
     </main>
 
